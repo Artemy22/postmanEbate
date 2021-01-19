@@ -1,0 +1,1326 @@
+{
+	"info": {
+		"_postman_id": "e40233ed-067e-4584-a48e-ec0e04ba8b9a",
+		"name": "E-bate_TEST_env",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Maintance -> Accounting period",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"variable_key\", \"variable_value\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/GridConfiguration/GetGridConfiguration/gridAccountingPeriodList",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"GridConfiguration",
+						"GetGridConfiguration",
+						"gridAccountingPeriodList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintance -> crossReferences",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/ExchangeFormat/GetExchangeFormatsByMapping/1",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"ExchangeFormat",
+						"GetExchangeFormatsByMapping",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintance -> crossReferences2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/crossReference/getCrossReferencedValues/1",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"crossReference",
+						"getCrossReferencedValues",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintance -> currencyOverview",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/Currency/search/asc/id/0/100/undefined/",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"Currency",
+						"search",
+						"asc",
+						"id",
+						"0",
+						"100",
+						"undefined",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintance -> dimensionManager",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/GridConfiguration/GetGridConfiguration/gridDimensionManager",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"GridConfiguration",
+						"GetGridConfiguration",
+						"gridDimensionManager"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintance -> dimensionManager2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/DimensionManager/Search/asc/Id/0/100/0/",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"DimensionManager",
+						"Search",
+						"asc",
+						"Id",
+						"0",
+						"100",
+						"0",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintance -> hierarchies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/GridConfiguration/GetGridConfiguration/gridHierarchiesMaintenance",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"GridConfiguration",
+						"GetGridConfiguration",
+						"gridHierarchiesMaintenance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintance -> hierarchies2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/Hierarchy/search/asc/Id/0/100/undefined/",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"Hierarchy",
+						"search",
+						"asc",
+						"Id",
+						"0",
+						"100",
+						"undefined",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintance -> hierarchyMaintenance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/HierarchyMaintenance/search/asc/Id/0/100/-1/",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"HierarchyMaintenance",
+						"search",
+						"asc",
+						"Id",
+						"0",
+						"100",
+						"-1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintance -> hierarchyMaintenance2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/HierarchyMaintenance/SearchDimensionValues/asc/Id/0/100/-1/",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"HierarchyMaintenance",
+						"SearchDimensionValues",
+						"asc",
+						"Id",
+						"0",
+						"100",
+						"-1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintance -> hierarchyMaintenance3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/HierarchyMaintenance/SearchLinkedDimensionValuesByNodeId/asc/Id/0/100/-1/",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"HierarchyMaintenance",
+						"SearchLinkedDimensionValuesByNodeId",
+						"asc",
+						"Id",
+						"0",
+						"100",
+						"-1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintance -> tradingGroups",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/tradingGroup/SearchLinkedAccounts/0/10/-1/",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"tradingGroup",
+						"SearchLinkedAccounts",
+						"0",
+						"10",
+						"-1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintance -> uomOverview",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/UnitOfMeasurement/search/asc/Id/0/100/",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"UnitOfMeasurement",
+						"search",
+						"asc",
+						"Id",
+						"0",
+						"100",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintance -> userMaintenance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/user/search/asc/userId/0/100/undefined/",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"user",
+						"search",
+						"asc",
+						"userId",
+						"0",
+						"100",
+						"undefined",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintance -> companyMaintenance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/company/searchCustomers/asc/Id/0/25/0/",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"company",
+						"searchCustomers",
+						"asc",
+						"Id",
+						"0",
+						"25",
+						"0",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintance -> productMaintenance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/product/search/asc/Id/0/100/0/",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"product",
+						"search",
+						"asc",
+						"Id",
+						"0",
+						"100",
+						"0",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintance -> workflow",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/workflow/search/asc/id/0/25/undefined/",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"workflow",
+						"search",
+						"asc",
+						"id",
+						"0",
+						"25",
+						"undefined",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintance -> roles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/User/getroles",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"User",
+						"getroles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintance -> roles2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/rolesnpermissions/getclaims/1",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"rolesnpermissions",
+						"getclaims",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintance -> tenant",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/tenant/search/asc/id/0/100/",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"tenant",
+						"search",
+						"asc",
+						"id",
+						"0",
+						"100",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintance -> wholesalerDiscount",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/GridConfiguration/GetGridConfiguration/whole-saler-discount",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"GridConfiguration",
+						"GetGridConfiguration",
+						"whole-saler-discount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintance -> wholesalerDiscount2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/WholesalerDiscount/search/asc/id/0/100/",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"WholesalerDiscount",
+						"search",
+						"asc",
+						"id",
+						"0",
+						"100",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintance -> reportManager",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/settings",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"settings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintance -> reportManager2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/ReportConfiguration/GetTenantReports/asc/id/0/20/",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"ReportConfiguration",
+						"GetTenantReports",
+						"asc",
+						"id",
+						"0",
+						"20",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pricing Managment -> Package",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/package/search/asc/Id/0/100/undefined/",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"package",
+						"search",
+						"asc",
+						"Id",
+						"0",
+						"100",
+						"undefined",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pricing Managment -> agreement",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/agreement/search/asc/Id/0/100/undefined/",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"agreement",
+						"search",
+						"asc",
+						"Id",
+						"0",
+						"100",
+						"undefined",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pricing Managment -> approvals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/request/GetPagedUserRequests/0/20",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"request",
+						"GetPagedUserRequests",
+						"0",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pricing Managment -> calcEngineStatus",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/CalculatorEngine/search",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"CalculatorEngine",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Finance -> accruals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/calculationinfo/search/asc/Id/0/100",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"calculationinfo",
+						"search",
+						"asc",
+						"Id",
+						"0",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Finance -> payments1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjZEQThBMTFGRUU5MkZERjVBRDcxNjRGNDcyQjlCOTcxODQxMEQxQzUiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJiYWloSC02U19mV3RjV1QwY3JtNWNZUVEwY1UifQ.eyJuYmYiOjE1NzMyMjAyMDgsImV4cCI6MTU3MzIyMTQwOCwiaXNzIjoiaHR0cDovL2lkZW50aXR5LWFwaSIsImF1ZCI6WyJodHRwOi8vaWRlbnRpdHktYXBpL3Jlc291cmNlcyIsImV2b2x2ZV9lYmF0ZV9jbGllbnRfYmFja2VuZCJdLCJjbGllbnRfaWQiOiJyby5ldm9sdmVfZWJhdGVfY2xpZW50X2JhY2tlbmQiLCJzdWIiOiI5NDY1MTIzOC0wODUzLTQyYTktOTYxMy00YjI0ZjYzNjFhMTciLCJhdXRoX3RpbWUiOjE1NzMyMjAyMDgsImlkcCI6ImxvY2FsIiwiZ2l2ZW5fbmFtZSI6IkFydGVtLkl2YW5vdkBldm9sdmUtY29uc3VsdGFudHMuY28udWsiLCJ1cGRhdGVkX2F0IjoiMTEvMDgvMjAxOSAxMzozNiIsIm5hbWUiOiJBcnRlbSBJIiwicm9sZSI6IkFkbWluaXN0cmF0b3IiLCJzZWxfdGVuYW50IjoiMSIsIk1haW50ZW5hbmNlX0FjY291bnRpbmdQZXJpb2QiOiIwIiwiUmVwb3J0aW5nX1JlcG9ydENvbmZpZ3VyYXRpb24iOiIwIiwiUmVwb3J0aW5nX1JlcG9ydEdlbmVyYXRpb24iOiIwIiwiTWFpbnRlbmFuY2VfQ3Jvc3NSZWZlcmVuY2UiOiIwIiwiTWFpbnRlbmFuY2VfQ3VycmVuY3kiOiIwIiwiTWFpbnRlbmFuY2VfRGltZW5zaW9uTWFuYWdlciI6IjAiLCJNYWludGVuYW5jZV9IaWVyYXJjaGllcyI6IjAiLCJNYWludGVuYW5jZV9IaWVyYXJjaHlNYW51YWxNYWludGVuYW5jZSI6IjAiLCJNYWludGVuYW5jZV9UcmFkaW5nR3JvdXAiOiIwIiwiTWFpbnRlbmFuY2VfVW5pdHNPZk1lYXN1cmUiOiIwIiwiTWFpbnRlbmFuY2VfVXNlcnMiOiIwIiwiTWFpbnRlbmFuY2VfQ3VzdG9tZXJNYWludGVuYW5jZSI6IjAiLCJNYWludGVuYW5jZV9Qcm9kdWN0TWFpbnRlbmFuY2UiOiIwIiwiTWFpbnRlbmFuY2VfUm9sZXMiOiIwIiwiTWFpbnRlbmFuY2VfV29ya2Zsb3ciOiIwIiwiUHJpY2luZ01hbmFnZW1lbnRfUGFja2FnZSI6IjAiLCJQcmljaW5nTWFuYWdlbWVudF9BZ3JlZW1lbnQiOiIwIiwiUHJpY2luZ01hbmFnZW1lbnRfUmViYXRlIjoiMCIsIlByaWNpbmdNYW5hZ2VtZW50X0NhbGNFbmdpbmVTdGF0dXMiOiIwIiwiRmluYW5jZV9BY2NydWFscyI6IjAiLCJGaW5hbmNlX1BheW1lbnRzIjoiMCIsIkZpbmFuY2VfSW1wb3J0RGF0YSI6IjAiLCJGaW5hbmNlX0FwcHJvdmVGT0NDbGFpbXMiOiIwIiwiRmluYW5jZV9QYXltZW50QWRqdXN0bWVudHMiOiIwIiwiTWFpbnRlbmFuY2VfVGVuYW50IjoiMCIsInNjb3BlIjpbImV2b2x2ZV9lYmF0ZV9jbGllbnRfYmFja2VuZCJdLCJhbXIiOlsicHdkIl19.rzRNHnGOuZ6Bg4-MtzysU0DUQ02juApkNqWUHAbWWJm9ER5NC1qwdayGeclfR3ZRgdJ5E1EB1ktSpM2eHFpBFTJrNCPBvc3xoxH4djlV80DhtltSyNjTBOODhFVtinN3FlkDxf7pF9hWJnI7dsQS636ZHmF26TLQG0Nick6gJvzOh8ECQfcdaA8C086cP0r7Yja32kPPKmuA_qdiroklRH7J25FeY9PJJYrbQcSPcRIwCJLeYN5ojjLKO7For-A7Z_dN8Bz8TdSoISaULYedtKIi8RUaml7JfKGYNWp7ohjE50oDqS2n0oKaaaK9wrGNx5q-AJoskYVyRVhF-c4D_A",
+						"disabled": true
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://app.test.e-bate.net"
+					},
+					{
+						"key": "postman-token",
+						"value": "2021477d-5625-d530-349f-8db0cc1e80ac"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/payment/GetSelectionInfo",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"payment",
+						"GetSelectionInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Finance -> payments2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjZEQThBMTFGRUU5MkZERjVBRDcxNjRGNDcyQjlCOTcxODQxMEQxQzUiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJiYWloSC02U19mV3RjV1QwY3JtNWNZUVEwY1UifQ.eyJuYmYiOjE1NzMyMjAyMDgsImV4cCI6MTU3MzIyMTQwOCwiaXNzIjoiaHR0cDovL2lkZW50aXR5LWFwaSIsImF1ZCI6WyJodHRwOi8vaWRlbnRpdHktYXBpL3Jlc291cmNlcyIsImV2b2x2ZV9lYmF0ZV9jbGllbnRfYmFja2VuZCJdLCJjbGllbnRfaWQiOiJyby5ldm9sdmVfZWJhdGVfY2xpZW50X2JhY2tlbmQiLCJzdWIiOiI5NDY1MTIzOC0wODUzLTQyYTktOTYxMy00YjI0ZjYzNjFhMTciLCJhdXRoX3RpbWUiOjE1NzMyMjAyMDgsImlkcCI6ImxvY2FsIiwiZ2l2ZW5fbmFtZSI6IkFydGVtLkl2YW5vdkBldm9sdmUtY29uc3VsdGFudHMuY28udWsiLCJ1cGRhdGVkX2F0IjoiMTEvMDgvMjAxOSAxMzozNiIsIm5hbWUiOiJBcnRlbSBJIiwicm9sZSI6IkFkbWluaXN0cmF0b3IiLCJzZWxfdGVuYW50IjoiMSIsIk1haW50ZW5hbmNlX0FjY291bnRpbmdQZXJpb2QiOiIwIiwiUmVwb3J0aW5nX1JlcG9ydENvbmZpZ3VyYXRpb24iOiIwIiwiUmVwb3J0aW5nX1JlcG9ydEdlbmVyYXRpb24iOiIwIiwiTWFpbnRlbmFuY2VfQ3Jvc3NSZWZlcmVuY2UiOiIwIiwiTWFpbnRlbmFuY2VfQ3VycmVuY3kiOiIwIiwiTWFpbnRlbmFuY2VfRGltZW5zaW9uTWFuYWdlciI6IjAiLCJNYWludGVuYW5jZV9IaWVyYXJjaGllcyI6IjAiLCJNYWludGVuYW5jZV9IaWVyYXJjaHlNYW51YWxNYWludGVuYW5jZSI6IjAiLCJNYWludGVuYW5jZV9UcmFkaW5nR3JvdXAiOiIwIiwiTWFpbnRlbmFuY2VfVW5pdHNPZk1lYXN1cmUiOiIwIiwiTWFpbnRlbmFuY2VfVXNlcnMiOiIwIiwiTWFpbnRlbmFuY2VfQ3VzdG9tZXJNYWludGVuYW5jZSI6IjAiLCJNYWludGVuYW5jZV9Qcm9kdWN0TWFpbnRlbmFuY2UiOiIwIiwiTWFpbnRlbmFuY2VfUm9sZXMiOiIwIiwiTWFpbnRlbmFuY2VfV29ya2Zsb3ciOiIwIiwiUHJpY2luZ01hbmFnZW1lbnRfUGFja2FnZSI6IjAiLCJQcmljaW5nTWFuYWdlbWVudF9BZ3JlZW1lbnQiOiIwIiwiUHJpY2luZ01hbmFnZW1lbnRfUmViYXRlIjoiMCIsIlByaWNpbmdNYW5hZ2VtZW50X0NhbGNFbmdpbmVTdGF0dXMiOiIwIiwiRmluYW5jZV9BY2NydWFscyI6IjAiLCJGaW5hbmNlX1BheW1lbnRzIjoiMCIsIkZpbmFuY2VfSW1wb3J0RGF0YSI6IjAiLCJGaW5hbmNlX0FwcHJvdmVGT0NDbGFpbXMiOiIwIiwiRmluYW5jZV9QYXltZW50QWRqdXN0bWVudHMiOiIwIiwiTWFpbnRlbmFuY2VfVGVuYW50IjoiMCIsInNjb3BlIjpbImV2b2x2ZV9lYmF0ZV9jbGllbnRfYmFja2VuZCJdLCJhbXIiOlsicHdkIl19.rzRNHnGOuZ6Bg4-MtzysU0DUQ02juApkNqWUHAbWWJm9ER5NC1qwdayGeclfR3ZRgdJ5E1EB1ktSpM2eHFpBFTJrNCPBvc3xoxH4djlV80DhtltSyNjTBOODhFVtinN3FlkDxf7pF9hWJnI7dsQS636ZHmF26TLQG0Nick6gJvzOh8ECQfcdaA8C086cP0r7Yja32kPPKmuA_qdiroklRH7J25FeY9PJJYrbQcSPcRIwCJLeYN5ojjLKO7For-A7Z_dN8Bz8TdSoISaULYedtKIi8RUaml7JfKGYNWp7ohjE50oDqS2n0oKaaaK9wrGNx5q-AJoskYVyRVhF-c4D_A",
+						"disabled": true
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://app.test.e-bate.net"
+					},
+					{
+						"key": "postman-token",
+						"value": "2021477d-5625-d530-349f-8db0cc1e80ac"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/payment/search/0/20",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"payment",
+						"search",
+						"0",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Finance -> adjustment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/PaymentAdjustment/GetUsedPayTos",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"PaymentAdjustment",
+						"GetUsedPayTos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Finance -> approveFocClaims",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/GridConfiguration/GetGridConfiguration/gridApproveFOCClaims",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"GridConfiguration",
+						"GetGridConfiguration",
+						"gridApproveFOCClaims"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Finance -> importData",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/GridConfiguration/GetGridConfiguration/import-result-grid",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"GridConfiguration",
+						"GetGridConfiguration",
+						"import-result-grid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Finance -> newImportData",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/ExchangeMapping/getall/",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"ExchangeMapping",
+						"getall",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Finance -> newImportData2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/ExchangeFormat/GetExchangeObjects",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"ExchangeFormat",
+						"GetExchangeObjects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reporting -> reports",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/report/getreporttypes",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"report",
+						"getreporttypes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reporting -> generate xls",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"ReportTypeId\":1}"
+				},
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/report/generatedocument",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"report",
+						"generatedocument"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reporting -> generate pdf",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"ReportTypeId\":2}"
+				},
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/report/generatedocument",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"report",
+						"generatedocument"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reporting -> generate pdf Rebate remittance",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"ReportTypeId\":3}"
+				},
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/report/generatedocument",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"report",
+						"generatedocument"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Implementation -> api/tenent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/tenant/",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"tenant",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Implementation -> GetAllUserStructureValues",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/tenant/GetAllUserStructureValues/1",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"tenant",
+						"GetAllUserStructureValues",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Implementation -> GetCompanyUserStructureValues",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/tenant/GetCompanyUserStructureValues/1",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"tenant",
+						"GetCompanyUserStructureValues",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintenance -> undefinedGetRecords",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/accountingPeriod/search/asc/id/0/25/undefined/",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"accountingPeriod",
+						"search",
+						"asc",
+						"id",
+						"0",
+						"25",
+						"undefined",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintenance -> Imported Files",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}.test.e-bate.net/api/ImportedFile/GetCompanySpecificImportedFiles/20/0/false",
+					"protocol": "https",
+					"host": [
+						"{{env}}",
+						"test",
+						"e-bate",
+						"net"
+					],
+					"path": [
+						"api",
+						"ImportedFile",
+						"GetCompanySpecificImportedFiles",
+						"20",
+						"0",
+						"false"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{accessToken}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.sendRequest({",
+					"    url: \"https://\"+pm.variables.get(\"env\")+\".test.e-bate.net/api/accountmanagement/login\",",
+					"    method: 'POST',",
+					"    header: {",
+					"        'content-type': 'application/json',",
+					"        'x-site-code': pm.environment.get(\"x-site-code\")",
+					"    },",
+					"    body: {",
+					"        mode: 'raw',",
+					"        raw: JSON.stringify({ email: \"\"+pm.variables.get(\"email\")+\"\", password:\"\"+pm.variables.get(\"passw\")+\"\", tenantId: \"1\" })",
+					"    }",
+					"}, function (err, res) {",
+					"    pm.environment.set(\"accessToken\", res.json().data.accessToken);",
+					"    console.log(res.json().data.accessToken);",
+					"});"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Status code is 200\", function () {",
+					"    pm.response.to.have.status(200);",
+					"});"
+				]
+			}
+		}
+	]
+}
